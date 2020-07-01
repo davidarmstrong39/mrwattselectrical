@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  background: #eee;
+  height: auto;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+main {
+
+  margin: auto;
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),
+    -30px 0px 40px rgba(0, 0, 0, 0.1);
+}
+
+#landing {
+  background: #7fd858;
+}
+
+#landing-text {
+  display: flex;
+  flex: 0 1 60vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+#landing-text h2 {
+  color: #888;
+}
+
+#landing-image {
+  background: url(images/mrwatts.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  flex: 0 1 40vw;
+  margin: 0;
+}
+
+.btn {
+padding: .5rem 2rem;
+  font-size: 30px;
+  border: 1px #ccc solid;
+  background-color: #fff;
+  display: inline-block;
+  margin: 6rem 0 0;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #4cb822;
+  transition: background 500ms ease;
+}
+
+.btn:hover {
+  background: ;
+}
+
+#about {
+    padding: 3rem 30rem;
+}
+
+#about h1{
+    text-align: center;
+    padding: 1rem;
+}
+
+#about h2{
+    text-align: justify;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: auto;
+  color: #333;
+}
+
+footer h3 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+/* Screen Sizes 500px and Up */
+@media (min-width: 500px) {
+  #landing {
+    display: flex;
+    height: 100%;
+  }
+
+  #landing-text {
+    height: 100vh;
+  }
+
+  #landing-image {
+    height: 100vh;
+  }
+}
+
+/* Screen Sizes 700px and Up */
+@media (min-width: 700px) {
+  .btn {
+    padding: 1.5rem 10rem;
+  }
+}
+
+
+/* Contact form styling */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  #contact {
+    background-image: url("images/electronics-black.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
+    padding: 3rem 30rem;
+    align-items: center;
+  }
+
+  .contact h1{
+      text-align: center;
+      padding:1rem;
+  }
